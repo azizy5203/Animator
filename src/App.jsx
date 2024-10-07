@@ -1,9 +1,13 @@
-import Home from "@/views/Home/Home";
+import { RouterProvider } from "react-router-dom";
+import router from "@/router/index";
+import Loader from "@/components/shared/Loader/Loader";
+
 function App() {
   return (
-    <div className="grid place-content-center h-screen">
-      <Home />
-    </div>
+    <RouterProvider
+      fallbackElement={<Loader />}
+      router={router}
+    />
   );
 }
 
