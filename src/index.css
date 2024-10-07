@@ -28,6 +28,7 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --movie-card: 234 50% 80%;
   }
   .dark {
     --background: 234 57% 13%;
@@ -54,6 +55,7 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --movie-card: 234 50% 29%;
   }
 }
 @layer base {

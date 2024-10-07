@@ -1,0 +1,34 @@
+.movie-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border-radius: var(--radius);
+  overflow: hidden;
+
+  &:hover &__poster {
+    transform: translateY(100%);
+  }
+
+  &__data {
+    grid-area: 1/1;
+    background-color: hsl(var(--movie-card));
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  &__poster {
+    grid-area: 1/1;
+    z-index: 1;
+    border-radius: var(--radius);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s transform ease-in-out;
+  }
+}

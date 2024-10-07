@@ -55,7 +55,7 @@ export default {
         hero: "url('./src/assets/img/hero.jpg')",
       },
       blur: {
-        hero: "16px",
+        hero: "7px",
       },
     },
   },
