@@ -17,5 +17,17 @@ export default defineConfig({
     alias: {
       "@": resolve(__dirname, "src"),
     },
+    extensions: [
+      ".mjs",
+      ".js",
+      ".ts",
+      ".jsx",
+      ".jsx",
+      ".json",
+      ".vue",
+      ".scss",
+      ".css",
+      ".svg",
+    ],
   },
 });
