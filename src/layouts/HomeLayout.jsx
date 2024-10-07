@@ -16,9 +16,9 @@ function HomeLayout() {
           />
         </div>
         <div
-          className="animate__animated animate__fadeInLeft  z-10 flex justify-between items-start p-4"
+          className="z-10 flex justify-between items-start p-4"
           style={{ gridArea: "1/1" }}>
-          <div className="flex flex-col justify-start items-center w-fit">
+          <div className="animate__animated animate__fadeInLeft flex flex-col justify-start items-center w-fit">
             <img
               className="w-8"
               src={Logo}
@@ -27,7 +27,7 @@ function HomeLayout() {
             <h4 className="font-medium">Animator</h4>
           </div>
 
-          <div>
+          <div className="animate__animated animate__fadeInRight">
             <Button className="bg-foreground text-white font-medium rounded-full">
               Login
             </Button>
