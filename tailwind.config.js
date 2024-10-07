@@ -51,6 +51,12 @@ export default {
           5: "hsl(var(--chart-5))",
         },
       },
+      backgroundImage: {
+        hero: "url('./src/assets/img/hero.jpg')",
+      },
+      blur: {
+        hero: "16px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
