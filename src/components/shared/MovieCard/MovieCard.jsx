@@ -35,13 +35,13 @@ function MovieCard({
           </span>
         </div>
         <TooltipProvider>
-          <Tooltip className="w-fit">
+          <Tooltip>
             <TooltipTrigger>
               <div className="text-ellipsis line-clamp-4">
                 <p className="text-sm md:text-md lg:text-xl">{overview}</p>
               </div>
             </TooltipTrigger>
-            <TooltipContent className="flex justify-center items-center m-auto w-[25%]">
+            <TooltipContent className="flex justify-center items-center m-auto max-w-60">
               <p className="max-w-full">{overview}</p>
             </TooltipContent>
           </Tooltip>
