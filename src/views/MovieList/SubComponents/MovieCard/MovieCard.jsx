@@ -6,6 +6,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { Badge } from "@/components/ui/badge";
+
 function MovieCard({
   title,
   poster_path,
@@ -50,7 +52,7 @@ function MovieCard({
         <div className="flex justify-between w-full">
           <span>Rating</span>
           <span>
-            <span className="text-white">{vote_average.toFixed(2)}</span> /10
+            <span className="text-white">{vote_average.toFixed(1)}</span> /10
           </span>
         </div>
 
@@ -63,11 +65,19 @@ function MovieCard({
         </div>
       </div>
 
-      <img
-        src={`https://image.tmdb.org/t/p/original/${poster_path}`}
-        className="movie-card__poster"
-        loading="lazy"
-      />
+      <div className="movie-card__poster-wrapper relative">
+        <Badge
+          className="absolute left-3 top-3 px-2 py-2"
+          variant="secondary">
+          <span className="text-yellow-400">{vote_average.toFixed(1)}</span>
+        </Badge>
+
+        <img
+          src={`https://image.tmdb.org/t/p/original/${poster_path}`}
+          className="movie-card__poster"
+          loading="lazy"
+        />
+      </div>
     </div>
   );
 }

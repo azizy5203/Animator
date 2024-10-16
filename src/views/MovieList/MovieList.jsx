@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import MovieCard from "@/components/shared/MovieCard/MovieCard";
+import MovieCard from "./SubComponents/MovieCard/MovieCard";
 
 import { useTranslation } from "react-i18next";
 
@@ -38,7 +38,7 @@ function MovieList() {
           );
         })}
       </div>
-      <button onClick={() => setPage(page + 1)}>laod more</button>
+      <button onClick={() => setPage(page + 1)}>load more</button>
     </div>
   );
 }
