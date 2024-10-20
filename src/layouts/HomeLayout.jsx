@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Logo from "@/assets/img/logo";
 import Hero from "@/assets/img/hero.jpg";
 import { Button } from "@/components/ui/button";
+import Swipe from "./Swiper/Swipe";
 function HomeLayout() {
   return (
     <div className=" flex flex-col gap-4">
@@ -9,14 +10,15 @@ function HomeLayout() {
         <div
           className="hero-img"
           style={{ gridArea: "1/1" }}>
-          <img
+          {/* <img
             className="w-screen h-screen blur-hero object-cover"
             src={Hero}
             alt=""
-          />
+          /> */}
+          <Swipe />
         </div>
         <div
-          className="z-10 flex justify-between items-start p-4"
+          className="z-10 flex justify-between items-start self-start p-4"
           style={{ gridArea: "1/1" }}>
           <div className="animate__animated animate__fadeInLeft flex flex-col justify-start items-center w-fit">
             <img
@@ -36,7 +38,7 @@ function HomeLayout() {
         <div
           className="hero__content z-10 place-self-center"
           style={{ gridArea: "1/1" }}>
-          <h1 className="animate__animated animate__fadeInUp text-center font-semibold text-4xl sm:text-6xl   lg:text-7xl">
+          <h1 className="animate__animated animate__fadeInUp text-center font-semibold text-4xl sm:text-6xl lg:text-7xl">
             <span className="text-white">Welcome to</span>
             <span className="text-foreground"> Animator</span>
           </h1>

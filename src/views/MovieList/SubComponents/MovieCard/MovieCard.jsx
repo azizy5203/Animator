@@ -67,7 +67,7 @@ function MovieCard({
 
       <div className="movie-card__poster-wrapper relative">
         <Badge
-          className="absolute left-3 top-3 px-2 py-2"
+          className="absolute left-3 top-3 p-2 rounded-full"
           variant="secondary">
           <span className="text-yellow-400">{vote_average.toFixed(1)}</span>
         </Badge>
